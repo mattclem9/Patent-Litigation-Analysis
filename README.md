@@ -3,6 +3,8 @@
 This project is an ongoing effort to build a robust data pipeline and visualization suite for federal patent litigation cases. While core processing modules are functional, entity resolution and longitudinal analysis are currently being refined.
 
 ---
+## Data Provenance & Versioning
+.
 
 ## Data Sources https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-litigation-docket-reports-data
 
@@ -71,6 +73,9 @@ Horizontal bar chart of cases grouped by their mapped U.S. Code cause of action.
 ---
 
 ## Processed Data
+## Data Provenance & Versioning
+
+The data in this repository has been transformed from the original USPTO Patent Litigation records.
 
 Intermediate and final cleaned files are in `data/processed/`.
 
