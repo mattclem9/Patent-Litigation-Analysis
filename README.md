@@ -1,6 +1,6 @@
 # U.S. Patent Litigation Analysis (1972–2020)
 
-A data pipeline and visualization project analyzing federal patent litigation cases filed in U.S. district courts from 1972 to 2020.
+This project is an ongoing effort to build a robust data pipeline and visualization suite for federal patent litigation cases. While core processing modules are functional, entity resolution and longitudinal analysis are currently being refined.
 
 ---
 
