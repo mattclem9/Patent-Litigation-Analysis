@@ -22,21 +22,15 @@ This project is an ongoing effort to build a robust data pipeline and visualizat
 
 Creates a composite identifier from `case_number + district_id + first 3 chars of case_name` to detect duplicate records. When duplicates exist, the most complete row (by non-null field count) is retained. Reduced the dataset from 96,966 to **96,881 unique cases**.
 
-### 2. Case Number Normalization & PACER Matching (`notebooks/case_number_normalization.ipynb`)
-
-- Normalizes raw case number strings to a canonical format (e.g., `1:2005-cv-00590`) by standardizing year representation and casing
-- Maps 91 distinct raw court name variants to a consistent `[State] [District] District Court` format
-- Matches cases to PACER records via a composite `case_number_normalized + court_name` key, achieving a **100% match rate** for cases
-
-### 3. Cause of Action Classification (`notebooks/Case-cause.ipynb`)
+### 2. Cause of Action Classification (`notebooks/Case-cause.ipynb`)
 
 Parses raw `case_cause` strings (e.g., `35:271 Patent Infringement`) using regex to extract the U.S. Code title and section, then maps them to human-readable labels via a ~110-entry lookup table. The dominant cause of action is **35:271 Patent Infringement** (~50,000 cases).
 
-### 4. State/Territory Extraction (`notebooks/us-state-territory-extractor.ipynb`)
+### 3. State/Territory Extraction (`notebooks/us-state-territory-extractor.ipynb`)
 
 Extracts the U.S. state or territory from the court name string using regex matching against a full list of 54 states and territories. Achieved **100% coverage** (no unmatched rows). Adds a `U.S. State/Territory` column used in geographic visualizations.
 
-### 5. Name Cleaning (`notebooks/names-clean.ipynb`)
+### 4. Name Cleaning (`notebooks/names-clean.ipynb`) *Ongoing*
 
 Cleans and deduplicates party names from `names.csv`. Uses NER-based organization detection and fuzzy clustering to identify name variants that refer to the same entity. Produces review files for manual validation of uncertain clusters.
 
