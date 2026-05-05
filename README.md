@@ -49,7 +49,7 @@ Key cleaning decisions:
 ### 3. Geographic Extraction
 **Notebook:** `notebooks/us-state-territory-extractor.ipynb`
 
-U.S. state and territory was extracted from the `court_name` field using regex matching against all 50 states plus D.C., Puerto Rico, Guam, the U.S. Virgin Islands, and American Samoa. Special handling was implemented to ensure `West Virginia` is matched before `Virginia` to prevent misclassification. Achieved **100% coverage** across all cases.
+U.S. state and territory was extracted from the `court_name` field using regex matching against all 50 states plus D.C., Puerto Rico, Guam, the U.S. Virgin Islands, and American Samoa. Achieved **100% coverage** across all cases.
 
 ### 4. Party Name Cleaning & Entity Resolution
 **Notebook:** `notebooks/names-clean.ipynb` *(Ongoing)*
