@@ -8,7 +8,7 @@ This is an ongoing empirical research project analyzing federal patent litigatio
 
 ## Data Source
 
-**USPTO Patent Litigation Docket Reports Data (1963–2020)**  
+**USPTO Patent Litigation Docket Reports Data (1972–2020)**  
 [https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-litigation-docket-reports-data](https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-litigation-docket-reports-data)
 
 | File | Rows | Description |
@@ -184,4 +184,4 @@ Jupyter Notebook
 ## Citation
 
 Raw data:  
-Toole, Andrew, Richard Miller, and Ted Sichelman. "Technical Documentation for Patent Litigation Docket Reports Data, 1963–2020." USPTO Economic Working Paper No. 2024-1. March 2024. Available at SSRN: https://ssrn.com/abstract=4780166
+Toole, Andrew, Richard Miller, and Ted Sichelman. "Technical Documentation for Patent Litigation Docket Reports Data, 1972–2020." USPTO Economic Working Paper No. 2024-1. March 2024. Available at SSRN: https://ssrn.com/abstract=4780166
